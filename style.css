@@ -1,7 +1,5 @@
 body{
     font-family: 'Noto Sans JP', sans-serif;
-    margin:0;
-    padding: 0;
     font-size: 16pt; /*maybe change this size*/
     background-color: #FFFAFA;
 
@@ -9,12 +7,14 @@ body{
 
 .nav_links{
     list-style-type:none;
-    display:flex;
+    text-align: center;
     flex-flow: column nowrap;
-    justify-content: center;
     justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    list-style-type:none;
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .nav_links a{
     color: #8FBC8F;
@@ -24,7 +24,6 @@ body{
     color: #000000;
     text-decoration: underline;
     text-decoration-style: solid;
-
 }
 header{
     border-top:3px solid #000000;
@@ -33,20 +32,80 @@ header{
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
+@-webkit-keyframes headermove{
+  from {width: 25px;}
+  to {width: 420px;}
+}
+
+@keyframes headermove{
+  from {width: 25px;}
+  to {width: 420px;}
+  }
+
 h1{
-    font-size: 4em;
+    font-size: 3.4em;
     text-align: center;
     color: #8FBC8F;
+    margin: 0.2em;
+    animation-name: headermove;
+    animation-duration: 2s;
   }
-h2{
+h2 {color: #8FBC8F;
     font-size: 1.5em;
-    padding: 5px;
+    text-align: center;
+    margin: 0.2em;
   }
+h3 {color: #8FBC8F;
+    font-size: 1.25em;
+    text-align: center;
+    margin: 0.2em;
+  }
+h4 {color: #8FBC8F;
+    font-size: 1em;
+    text-align: center;
+    margin: 0.2em;
+  }
+  footer{
+    color: #8FBC8F;
+    display:flex;
+    text-align: center;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    font-size: 26pt;
+    margin-top: 20px;
+  }
+footer p{
+  margin-bottom: 20px;
+}
+footer a{
+    color: #8FBC8F;
+    text-decoration: none;
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    font-size: 16pt;
+}
+
+footer a:hover, a:focus{
+    color: #000000;
+    text-decoration: underline;
+    text-decoration-style: solid;
+}
+
+
 
 main{
     border-bottom: 3px solid #000000;
+    display:block;
   }
+
+/*home*/ 
 .container a{
     color: #8FBC8F;
     text-decoration: none;
@@ -56,79 +115,73 @@ main{
     text-decoration: underline;
     text-decoration-style: solid;
 }
+.container p{
+  text-align: center;
+  line-height: 1.5;
+}
+.container div{
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+/*skills*/ 
+
+
 .container_skills{
-    display:grid;
-    grid-template-columns: 1fr;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto auto auto;
+  align-items: center;
+  justify-items: center;
 }
-h2{color: #8FBC8F;
-    font-size: 1.5em;
-    padding: 5px;
-    text-align: center;
-  }
-h3 {color: #8FBC8F;
-    font-size: 1.25em;
-    padding: 5px;
-    text-align: center;
-  }
-  h4 {color: #8FBC8F;
-    font-size: 1em;
-    padding: 5px;
-    text-align: center;
-  }
 
-img{
-padding: 5px;
-display: block;
-margin-right:auto;
-margin-left:auto;
-}
 p{
-    text-align: center; 
+  text-align:center;
+  line-height: 1.5;
 }
-div{
-    overflow: hidden;
-  }
+.container_skills div{
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 
-.container_about{
-    display:grid;
-    grid-template-columns: 1fr;
 }
-div{
-    overflow: hidden;
-  }
+
+.python, .spanish, .html {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 350px;
+  align-items: center;
+  justify-items: center;
+  overflow: hidden;
+}
+.container_experience p{
+  text-align: center; 
+}
+
+.experience{
+  display:flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+.reachimg1{
+  grid-column: 1/ span 1;
+  grid-row: 1 / span 1;
+}
+.reachimg1{
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+}
+
+
 .container_experience a{
     color: #8FBC8F;
     text-decoration: none;
+
 } 
 .container_experience a:hover, a:focus{
-    color: #000000;
-    text-decoration: underline;
-    text-decoration-style: solid;
-}
-    
-
-
-footer{
-    color: #8FBC8F;
-    padding: 30px;
-    display:flex;
-    text-align: center;
-    flex-flow: column nowrap;
-    justify-content: space-between;
-    justify-content: center;
-    align-items: center;
-  }
-footer a{
-    color: #8FBC8F;
-    text-decoration: none;
-    display:flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
-    justify-content: center;
-    align-items: center;
-}
-
-footer a:hover, a:focus{
     color: #000000;
     text-decoration: underline;
     text-decoration-style: solid;
