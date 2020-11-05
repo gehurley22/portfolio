@@ -32,7 +32,6 @@ header{
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
 }
 @-webkit-keyframes headermove{
   from {width: 25px;}
@@ -55,17 +54,17 @@ h1{
 h2 {color: #8FBC8F;
     font-size: 1.5em;
     text-align: center;
-    margin: 0.2em;
+    margin: 10px;
   }
 h3 {color: #8FBC8F;
-    font-size: 1.25em;
-    text-align: center;
-    margin: 0.2em;
-  }
-h4 {color: #8FBC8F;
     font-size: 1em;
     text-align: center;
-    margin: 0.2em;
+    margin: 10px;
+  }
+h4 {color: #8FBC8F;
+    font-size: .8em;
+    text-align: center;
+    margin: 10px
   }
   footer{
     color: #8FBC8F;
@@ -77,6 +76,7 @@ h4 {color: #8FBC8F;
     align-items: center;
     font-size: 26pt;
     margin-top: 20px;
+    margin-bottom: 20px;
   }
 footer p{
   margin-bottom: 20px;
@@ -98,8 +98,6 @@ footer a:hover, a:focus{
     text-decoration-style: solid;
 }
 
-
-
 main{
     border-bottom: 3px solid #000000;
     display:block;
@@ -120,9 +118,7 @@ main{
   line-height: 1.5;
 }
 .container div{
-  margin-bottom: 20px;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin: 20px;
 }
 /*skills*/ 
 
@@ -143,46 +139,68 @@ p{
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.python, .spanish, .html {
+
+.python, .spanish, .html, .python2, .spanish2, .html2{
   display: grid;
   grid-template-columns: 1fr;
   max-width: 350px;
   align-items: center;
   justify-items: center;
   overflow: hidden;
+  margin-bottom: 20px;
+  margin-right: 20px;
 }
-.container_experience p{
-  text-align: center; 
-}
-
-.experience{
-  display:flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: center;
-}
-.reachimg1{
-  grid-column: 1/ span 1;
-  grid-row: 1 / span 1;
-}
-.reachimg1{
-  grid-column: 2 / span 1;
-  grid-row: 2 / span 1;
+.python2, .spanish2, .html2{
+ margin-right: 20px;
+ margin-left: 20px;
 }
 
+/*experience*/ 
+.container_experience {
+margin-right: auto;
+margin-left: auto;
+} 
+.internship, .reach, .aaf, .sk, .dancemarathon{
+display:flex;
+flex-flow: row wrap;
+align-items: center;
+justify-content: center;
+margin: 20px;
+}
 
 .container_experience a{
     color: #8FBC8F;
     text-decoration: none;
-
 } 
 .container_experience a:hover, a:focus{
     color: #000000;
     text-decoration: underline;
     text-decoration-style: solid;
 }
+.container_experience img{
+  margin-bottom: 20px;
+}
+
+/*about*/
+#headshot, #madison, #family, #dogs, #travel{
+display:flex;
+flex-flow: row wrap;
+align-items: center;
+justify-content: center;
+margin: 20px;
+}
+.container_about{
+  margin: 20px;
+}
+#headshot img, #madison img, #family img, #dogs img, #travel img{
+  margin-bottom: 10px;
+}
+#headshot p, #madison p, #family p, #dogs p, #travel p{
+  margin-top: 10px;
+}
+
+
