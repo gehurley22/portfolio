@@ -142,9 +142,13 @@ p{
 .container_skills div{
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.container_skills h2{
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 
@@ -154,12 +158,15 @@ p{
   max-width: 350px;
   align-items: center;
   justify-items: center;
-  margin-bottom: 20px;
   margin-right: 20px;
 }
 .python2, .spanish2, .html2{
  margin-right: 20px;
  margin-left: 20px;
+ margin-bottom: 0px;
+}
+.python, .spanish, .html{
+  margin-bottom: 20px;
 }
 
 /*experience*/ 
