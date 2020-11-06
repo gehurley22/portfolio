@@ -12,17 +12,19 @@ body{
     justify-content: space-between;
     justify-content: center;
     align-items: center;
-    padding: 0;
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.nav_links a{
-    color: #8FBC8F;
-    text-decoration: none;}
+.link a{
+  color: #8FBC8F;
+  text-decoration: none;}
 
-.nav_links a:hover, a:focus{
+.active a {
+  color: #000000;
+  text-decoration-style: solid;
+}
+.link a:hover, a:focus{
     color: #000000;
-    text-decoration: underline;
     text-decoration-style: solid;
 }
 header{
@@ -52,19 +54,19 @@ h1{
     animation-duration: 2s;
   }
 h2 {color: #8FBC8F;
-    font-size: 1.5em;
+    font-size: 1.6em;
     text-align: center;
-    margin: 10px;
+    margin: 5px;
   }
 h3 {color: #8FBC8F;
-    font-size: 1em;
+    font-size: 1.2em;
     text-align: center;
-    margin: 10px;
+    margin: 5px;
   }
 h4 {color: #8FBC8F;
     font-size: .8em;
     text-align: center;
-    margin: 10px
+    margin: 5px
   }
   footer{
     color: #8FBC8F;
@@ -75,11 +77,12 @@ h4 {color: #8FBC8F;
     justify-content: center;
     align-items: center;
     font-size: 26pt;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 20px;
   }
 footer p{
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  line-height: 1;
 }
 footer a{
     color: #8FBC8F;
@@ -94,13 +97,15 @@ footer a{
 
 footer a:hover, a:focus{
     color: #000000;
-    text-decoration: underline;
     text-decoration-style: solid;
 }
 
 main{
     border-bottom: 3px solid #000000;
     display:block;
+  }
+  img {
+    border: 5px solid #8FBC8F;
   }
 
 /*home*/ 
@@ -110,7 +115,6 @@ main{
 }
 .container a:hover, a:focus{
     color: #000000;
-    text-decoration: underline;
     text-decoration-style: solid;
 }
 .container p{
@@ -150,7 +154,6 @@ p{
   max-width: 350px;
   align-items: center;
   justify-items: center;
-  overflow: hidden;
   margin-bottom: 20px;
   margin-right: 20px;
 }
@@ -178,11 +181,10 @@ margin: 20px;
 } 
 .container_experience a:hover, a:focus{
     color: #000000;
-    text-decoration: underline;
     text-decoration-style: solid;
 }
 .container_experience img{
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 /*about*/
@@ -201,6 +203,12 @@ margin: 20px;
 }
 #headshot p, #madison p, #family p, #dogs p, #travel p{
   margin-top: 10px;
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+  h1 {
+    animation: none; 
+  }
 }
 
 
