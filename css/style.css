@@ -16,7 +16,7 @@ body{
     margin-bottom: 20px;
 }
 .link a{
-  color: #8FBC8F;
+  color: #3399FF;
   text-decoration: none;}
 
 .active a {
@@ -30,8 +30,8 @@ body{
     font-size: 25px;
 }
 header{
-    border-top:3px solid #000000;
-    border-bottom: 3px solid #000000;
+    border-top:3px solid #000080;
+    border-bottom: 3px solid #000080;
     display:flex;
     flex-flow: column;
     justify-content: center;
@@ -50,28 +50,28 @@ header{
 h1{
     font-size: 3.4em;
     text-align: center;
-    color: #8FBC8F;
+    color: #3399FF;
     margin: 0.2em;
     animation-name: headermove;
     animation-duration: 2s;
   }
-h2 {color: #8FBC8F;
+h2 {color: #3399FF;
     font-size: 1.6em;
     text-align: center;
     margin: 5px;
   }
-h3 {color: #8FBC8F;
+h3 {color: #000080;
     font-size: 1em;
     text-align: center;
     margin: 5px;
   }
-h4 {color: #8FBC8F;
+h4 {color: #000080;
     font-size: .8em;
     text-align: center;
     margin: 5px
   }
   footer{
-    color: #8FBC8F;
+    color: #3399FF;
     display:flex;
     text-align: center;
     flex-flow: column nowrap;
@@ -87,7 +87,7 @@ footer p{
   line-height: 1;
 }
 footer a{
-    color: #8FBC8F;
+    color: #000080;
     text-decoration: none;
     display:flex;
     flex-flow: column nowrap;
@@ -104,11 +104,11 @@ footer a:hover, a:focus{
 }
 
 main{
-    border-bottom: 3px solid #000000;
+    border-bottom: 3px solid #000080;
     display:block;
   }
   img {
-    border: 5px solid #8FBC8F;
+    border: 5px solid #000080;
   }
   fieldset{
     display: grid;
@@ -122,7 +122,7 @@ main{
   legend{
   text-align: center;
   font-size: 150%;
-  color: #8FBC8F;
+  color: #3399FF;
   }
   input, textarea{
     width: 80%;
@@ -130,18 +130,18 @@ main{
     margin: 20px;
   }
   label{
-    color: #8FBC8F;
+    color: #000080;
     font-size: 125%;
   }
   input[type=submit]{
-    background-color: #8FBC8F;
+    background-color: #3399FF;
     width: 50%;
   }
   
 
 /*home*/ 
 .container a{
-    color: #8FBC8F;
+    color: #3399FF;
     text-decoration: none;
 }
 .container a:hover, a:focus{
@@ -204,7 +204,7 @@ margin: 20px;
 }
 
 .container_experience a{
-    color: #8FBC8F;
+    color: #3399FF;
     text-decoration: none;
 } 
 .container_experience a:hover, a:focus{
