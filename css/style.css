@@ -124,6 +124,7 @@ img {
   text-align: center;
   font-size: 30pt;
   color: #0054A8;
+  margin-bottom: -10px;
   }
   input, textarea{
     width: 80%;
@@ -268,6 +269,7 @@ margin: 20px;
     .python, .spanish, .html, .python2, .spanish2, .html2{
       margin-left: 25px;
       margin-right: 25px;
+      margin-bottom: 25px;
     }
     
 
@@ -275,7 +277,7 @@ margin: 20px;
     
     .internship,.reach, .aaf, .sk, .dancemarathon{
       display: grid;
-      grid-template-columns: 480px 480px 480px;
+      grid-template-columns: 470px 470px 470px;
       grid-template-rows: auto auto;
     
     } 
