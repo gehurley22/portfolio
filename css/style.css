@@ -16,22 +16,22 @@ body{
     margin-bottom: 20px;
 }
 .link a{
-  color: #3399FF;
+  color: #0054A8;
   text-decoration: none;}
 
 .active a {
   color: #000000;
   text-decoration-style: solid;
-  font-size: 25px;
+  font-size: 30px;
 }
 .link a:hover, a:focus{
     color: #000000;
     text-decoration-style: solid;
-    font-size: 25px;
+    font-size: 30px;
 }
 header{
-    border-top:3px solid #000080;
-    border-bottom: 3px solid #000080;
+    border-top:3px solid #191970;
+    border-bottom: 3px solid #191970;
     display:flex;
     flex-flow: column;
     justify-content: center;
@@ -50,35 +50,35 @@ header{
 h1{
     font-size: 3.4em;
     text-align: center;
-    color: #3399FF;
+    color: #0054A8;
     margin: 0.2em;
     animation-name: headermove;
     animation-duration: 2s;
   }
-h2 {color: #3399FF;
+h2 {color: #0054A8;
     font-size: 1.6em;
     text-align: center;
     margin: 5px;
   }
-h3 {color: #000080;
+h3 {color: #191970;
     font-size: 1em;
     text-align: center;
     margin: 5px;
   }
-h4 {color: #000080;
+h4 {color: #191970;
     font-size: .8em;
     text-align: center;
     margin: 5px
   }
   footer{
-    color: #3399FF;
+    color: #0054A8;
     display:flex;
     text-align: center;
     flex-flow: column nowrap;
     justify-content: space-between;
     justify-content: center;
     align-items: center;
-    font-size: 26pt;
+    font-size: 30pt;
     margin-top: 10px;
     margin-bottom: 20px;
   }
@@ -87,7 +87,7 @@ footer p{
   line-height: 1;
 }
 footer a{
-    color: #000080;
+    color: #191970;
     text-decoration: none;
     display:flex;
     flex-flow: column nowrap;
@@ -104,11 +104,11 @@ footer a:hover, a:focus{
 }
 
 main{
-    border-bottom: 3px solid #000080;
+    border-bottom: 3px solid #191970;
     display:block;
   }
-  img {
-    border: 5px solid #000080;
+img {
+    border: 5px solid #191970;
   }
   fieldset{
     display: grid;
@@ -118,11 +118,12 @@ main{
     margin-right: 20px;
     margin-left:20px;
     margin-top: 20px;
+    border-bottom: 3px solid #191970
   }
   legend{
   text-align: center;
-  font-size: 150%;
-  color: #3399FF;
+  font-size: 30pt;
+  color: #0054A8;
   }
   input, textarea{
     width: 80%;
@@ -130,18 +131,18 @@ main{
     margin: 20px;
   }
   label{
-    color: #000080;
+    color: #191970;
     font-size: 125%;
   }
   input[type=submit]{
-    background-color: #3399FF;
+    background-color: #0054A8;
     width: 50%;
   }
   
 
 /*home*/ 
 .container a{
-    color: #3399FF;
+    color: #0054A8;
     text-decoration: none;
 }
 .container a:hover, a:focus{
@@ -204,7 +205,7 @@ margin: 20px;
 }
 
 .container_experience a{
-    color: #3399FF;
+    color: #0054A8;
     text-decoration: none;
 } 
 .container_experience a:hover, a:focus{
@@ -265,14 +266,16 @@ margin: 20px;
       margin:30px;
     }
     .python, .spanish, .html, .python2, .spanish2, .html2{
-      margin: 35px;
+      margin-left: 25px;
+      margin-right: 25px;
     }
+    
 
     /*experience*/
     
     .internship,.reach, .aaf, .sk, .dancemarathon{
       display: grid;
-      grid-template-columns: 450px 450px 450px;
+      grid-template-columns: 480px 480px 480px;
       grid-template-rows: auto auto;
     
     } 
