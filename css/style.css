@@ -78,6 +78,7 @@ h4 {color: #191970;
     margin-top: 10px;
     margin-bottom: 20px;
     text-align: center;
+    border-top: 3px solid #191970;
   }
 footer p{
   margin-bottom: 10px;
@@ -99,7 +100,6 @@ footer a:hover, a:focus{
 }
 
 main{
-    border-bottom: 3px solid #191970;
     display:block;
   }
 img {
@@ -108,10 +108,9 @@ img {
   fieldset{
     display: grid;
     grid-template-columns: 1fr;
+    margin-top: 20px;
     align-items: center;
     justify-items: center;
-    margin-top: 20px;
-    border-bottom: 3px solid #191970;
   }
   legend{
   text-align: center;
@@ -170,7 +169,7 @@ p{
   justify-content: center;
 }
 
-.python, .spanish, .html, .python2, .spanish2, .html2{
+.python2, .spanish2, .html2{
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
@@ -184,9 +183,31 @@ p{
   margin-bottom: 0px;
  }
 
-.python, .spanish, .html{
-  margin-bottom: 20px;
+.pythonimg{
+  background-image: url("../images/python.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
 }
+.spainimg{
+  background-image: url("../images/spain.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+.computerimg{
+  background-image: url("../images/computer.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+
 
 /*experience*/ 
 .container_experience {
@@ -238,9 +259,38 @@ margin: 20px;
 #headshot p, #madison p, #family p, #dogs p, #travel p, #school p{
   margin-top: 10px;
 }
+@media screen and (min-width: 700px){
+  .nav_links{
+    display: flex;
+    list-style-type:none;
+    flex-flow: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+   }
+   .footerlinks {
+    color: #191970;
+    text-decoration: none;
+    display: grid;
+    font-size: 16pt;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    margin-right: 230px;
+    margin-left: 230px;
+}
+/*aboutme*/
+.aboutme{
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  }
 
 
-@media screen and (min-width: 850px){
+@media screen and (min-width: 1000px){
   .nav_links{
     display: flex;
     list-style-type:none;
@@ -251,24 +301,30 @@ margin: 20px;
     margin-right: 120px;
     margin-left: 120px;
    }
+
    .footerlinks {
     color: #191970;
     text-decoration: none;
     display: grid;
     font-size: 16pt;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
-    margin-right: 120px;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+.whole{
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
    /*aboutme*/
    .aboutme{
     display: grid;
     grid-template-rows: auto auto;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     justify-content: center;
-
     }
     #headshot p, #madison p, #family p, #dogs p, #travel p{
       margin-right: 10px;
@@ -352,10 +408,10 @@ margin: 20px;
     /*skills*/ 
     .skills{
       display: grid;
-      grid-template-columns: auto auto;
+      grid-template-columns: auto;
       grid-template-rows: auto auto auto;
-      margin-right: 20px;
-      margin:30px;
+      margin-top:20px;
+      margin-bottom:20px;
     }
     .python, .spanish, .html, .python2, .spanish2, .html2{
       margin-left: 25px;
@@ -363,20 +419,22 @@ margin: 20px;
       margin-bottom: 25px;
     }
     .python, .spanish, .html{
-      margin-bottom: 40px;
+      margin-bottom: 20px;
     }
+    .python2, .spanish2, .html2{
+      margin-top:20px;
+    }
+
     
 
     /*experience*/
-    
     .internship,.reach, .aaf, .sk, .dancemarathon{
       display: grid;
-      grid-template-columns: 450px 450px 450px;
+      grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: auto;
       margin-bottom: 100px;
-    
-    } 
-    .internshipimg1, .reachimg1, .aafimg1, .skimg1, .danceimg1{
+    }
+ .internshipimg1, .reachimg1, .aafimg1, .skimg1, .danceimg1{
       grid-column: 1 / span 1;
       grid-row: 1 / span 1;
       margin-right: auto;
@@ -395,6 +453,8 @@ margin: 20px;
       margin-right: auto;
       margin-left: auto;
     }
+ 
+ 
     .internshipimg1, .internshipimg2, .reachimg1, .reachimg2, .aafimg1, .aafimg2, .skimg1, .skimg2, .danceimg1, .danceimg2{
       position: relative;
     }
@@ -434,7 +494,7 @@ margin: 20px;
     
     .imgwords1, .imgwords2, .imgwords3, .imgwords4, .imgwords5, .imgwords6, .imgwords7, .imgwords8, .imgwords9, .imgwords10{
       color: white;
-      font-size: 15px;
+      font-size: 14.5px;
       position: absolute;
       top: 50%;
       left: 50%;
