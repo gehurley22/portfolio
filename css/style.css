@@ -166,10 +166,11 @@ img {
 .container div{
   margin: 20px;
 }
-.whole{
+.container{
   display: grid;
   grid-template-columns: 1fr;
 }
+
 /*skills*/ 
 
 p{
@@ -328,7 +329,7 @@ margin: 20px;
    grid-template-columns: 1fr 1fr 1fr;
    grid-template-rows: auto;
 }
-.whole{
+.container{
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr;
