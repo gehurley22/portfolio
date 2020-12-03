@@ -324,7 +324,7 @@ margin: 20px;
     color: #191970;
     text-decoration: none;
     display: grid;
-   font-size: 16pt;
+  font-size: 16pt;
    grid-template-columns: 1fr 1fr 1fr;
    grid-template-rows: auto;
 }
