@@ -342,6 +342,7 @@ margin: 20px;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     justify-content: center;
+    font-size: 13pt;
     }
     #headshot p, #madison p, #family p, #dogs p, #travel p{
       margin-right: 10px;
@@ -349,33 +350,33 @@ margin: 20px;
     }
     .flip-card1{
       perspective: 1000px;
-      width: 300px;
-      height: 450px;
+      width: 240px;
+      height: 360px;
       }
     .flip-card2{
       perspective: 1000px;
-      width: 312.5px;
-      height: 400px;
+      width: 250px;
+      height: 320px;
     }
     .flip-card3{
       perspective: 1000px;
-      width: 350px;
-      height: 350px;
+      width: 280px;
+      height: 280px;
     }
     .flip-card4{
       perspective: 1000px;
-      width: 300px;
-      height: 450px;
+      width: 240px;
+      height: 360px;
     }
     .flip-card5{
       perspective: 1000px;
-      width: 450px;
-      height: 300px;
+      width: 360px;
+      height: 240px;
     }
     .flip-card6{
       perspective: 1000px;
-      width: 450px;
-      height: 300px;
+      width: 360px;
+      height: 240px;
     }
       
     .flip-card-inner1{
@@ -410,20 +411,20 @@ margin: 20px;
       transform: rotateY(180deg);
       }
       #headshot img, #dogs img{
-        width: 300px;
-        height: 450px;
+        width: 240px;
+        height: 360px;
       }
       #family img{
-        width:312.5px;
-        height: 400px;
+        width: 250px;
+      height: 320px;
       }
       #school img{
-        width:350px;
-        height:350px;
+        width:280px;
+        height:280px;
       }
       #madison img, #travel img{
-        width:450px;
-        height: 300px;
+        width:360px;
+        height: 240px;
       }
     /*skills*/ 
     .skills{
